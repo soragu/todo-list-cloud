@@ -1,3 +1,5 @@
 {
-  "cloudfunctionRoot": "./cloud-functions/"
+  "miniprogramRoot": "./",
+  "cloudfunctionRoot": "./cloud-functions/",
+  "appid": "wx66f2289ca0e1c483"
 }

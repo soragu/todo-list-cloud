@@ -1,6 +1,6 @@
 // 填写 env
 wx.cloud.init({
-  env: ''
+  env: 'test1'
 })
 
 

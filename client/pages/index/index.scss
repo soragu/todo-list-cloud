@@ -15,16 +15,11 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
-}
-
 button {
   background: transparent;
   outline: none;
   margin-bottom: 20rpx;
   font-size: 30rpx;
-  width: 90%;
   text-align: left;
 }
 
@@ -44,4 +39,14 @@ button {
 .dbimg {
   width: 50rpx;
   height: 50rpx;
+}
+
+.nav-button {
+  margin-top: 300rpx;
+  padding: 15rpx;
+  display: block;
+  min-width: 300rpx;
+  background-color: #a3d2d8;
+  text-align: center;
+  border: 1rpx solid #1f2542;
 }

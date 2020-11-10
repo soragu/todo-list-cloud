@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/todoList/index",
     "pages/index/index"
   ],
   "window": {
@@ -7,5 +8,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "useExtendedLib": {
+    "weui": true
   }
 }

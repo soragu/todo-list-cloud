@@ -1,0 +1,15 @@
+.todo-item {
+  margin: 10rpx 0;
+  background: #ffebd6;
+  transition: background 0.4s;
+  input {
+    background: #fff;
+  }
+}
+
+.done {
+  background: #c7f7f2;
+  .desc {
+    text-decoration: line-through;
+  }
+}

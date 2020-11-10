@@ -1,0 +1,35 @@
+<view class="container fluid">
+
+  <mp-form id="form" class="input-block">
+    <mp-cells>
+
+      <mp-cell>
+        <input
+          placeholder="please input..."
+          bind:input="handleInput"
+          value="{{inputValue}}"
+        />
+        <button slot="footer" bind:tap="addTodoItem">Add</button>
+      </mp-cell>
+
+    </mp-cells>
+  </mp-form>
+
+  <view
+    class="todo-list-block"
+    scroll-y
+  >
+    <todo-item
+      wx:for="{{todoList}}"
+      wx:key="oid"
+      index="{{index}}"
+      oid="{{item.oid}}"
+      done="{{item.done}}"
+      desc="{{item.desc}}"
+      bind:done="handleItemDone"
+      bind:change="handleItemChange"
+      bind:deleted="handleItemDeleted"
+    ></todo-item>
+  </view>
+    
+</view>

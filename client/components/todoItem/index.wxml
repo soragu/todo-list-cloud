@@ -1,0 +1,22 @@
+<view
+  class="todo-item {{done ? 'done' : ''}}"
+  bind:touchstart="touchStart"
+  bind:touchend="touchEnd"
+>
+  <mp-cell wx:if="{{editting}}">
+    <input
+      value="{{desc}}"
+      bind:confirm="handleCofirm"
+    />
+  </mp-cell>
+  <mp-slideview
+    buttons="{{slideButtons}}"
+    bind:buttontap="slideButtonTap"
+    wx:else
+  >
+    <mp-cell>
+      <text>{{index + 1}}.</text>
+      <text class="desc">{{desc}}</text>
+    </mp-cell>
+  </mp-slideview>
+</view>
