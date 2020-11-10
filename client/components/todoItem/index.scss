@@ -1,14 +1,17 @@
 .todo-item {
   margin: 10rpx 0;
-  background: #ffebd6;
-  transition: background 0.4s;
+  background: #fff3c7;
+  transition: color 0.6s ease, text-decoration 0.6s ease-out;
   input {
     background: #fff;
   }
 }
 
 .done {
-  background: #c7f7f2;
+  color: #fff;
+  background:
+    linear-gradient(to left top, transparent 50%, rgba(0, 0, 0, 0.4) 0) no-repeat 100% 100% / 1.4em 1.4em,
+    linear-gradient(-45deg, transparent 1em, #58a 0);
   .desc {
     text-decoration: line-through;
   }
