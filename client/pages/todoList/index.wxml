@@ -6,8 +6,7 @@
       <mp-cell>
         <input
           placeholder="please input..."
-          bind:input="handleInput"
-          value="{{inputValue}}"
+          model:value="{{inputValue}}"
         />
         <button slot="footer" bind:tap="addTodoItem">Add</button>
       </mp-cell>

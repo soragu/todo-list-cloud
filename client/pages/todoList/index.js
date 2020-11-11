@@ -1,3 +1,5 @@
+import { debounce } from '../../lib/util'
+
 Page({
   data: {
     inputValue: '',
@@ -8,9 +10,9 @@ Page({
     // this.getTodoList()
   },
 
-  handleInput(e) {
-    this.setData({inputValue: e.detail.value})
-  },
+  handleInput: debounce((e) =>{
+    // this.setData({inputValue: e.detail.value})
+  }, 1000),
 
   getTodoList() {
     // todo: get data from cloud
