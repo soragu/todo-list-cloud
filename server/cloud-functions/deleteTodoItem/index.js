@@ -6,10 +6,7 @@ cloud.init()
 const db = cloud.database()
 // 云函数入口函数
 exports.main = async (event, context) => {
-  try {
-    let data = await db.collection('todos').get()
-    return data
-  } catch (e) {
-    return e
-  }
+  let _id = event.data._id
+  let data = await db.collection('todos').doc(_id).remove()
+  return data
 }

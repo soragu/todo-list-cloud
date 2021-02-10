@@ -3,9 +3,9 @@ import { getTouchData } from '../../lib/util.js'
 Component({
   properties: {
     index: Number,
-    oid: String,
+    _id: String,
     desc: String,
-    done: Boolean
+    done: Boolean,
   },
   data: {
     touch: {

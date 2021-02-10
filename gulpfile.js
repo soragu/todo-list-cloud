@@ -150,7 +150,7 @@ gulp.task('cloud', () => {
 })
 
 gulp.task('watch:cloud', () => {
-  gulp.watch(`${cloudPath}/**`, ['cloud'])
+  gulp.watch(`${cloudPath}/**/*.*`, ['cloud'])
 })
 
 gulp.task('cloud:dev', () => {

@@ -7,6 +7,7 @@
         <input
           placeholder="please input..."
           model:value="{{inputValue}}"
+          bind:confirm="addTodoItem"
         />
         <button slot="footer" bind:tap="addTodoItem">Add</button>
       </mp-cell>
@@ -20,9 +21,9 @@
   >
     <todo-item
       wx:for="{{todoList}}"
-      wx:key="oid"
+      wx:key="_id"
       index="{{index}}"
-      oid="{{item.oid}}"
+      _id="{{item._id}}"
       done="{{item.done}}"
       desc="{{item.desc}}"
       bind:done="handleItemDone"
